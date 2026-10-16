@@ -28,7 +28,7 @@ Resume/
 ├── template/              # Read-only LaTeX class files and blueprint templates
 ├── build.ps1              # Primary PowerShell automation orchestrator
 ├── instructions.md        # Deterministic prompt rules and formatting geometry
-└── master.md              # Template file representing the factual professional data source (example provided in repo)
-└── job_listing.txt        # Contains listing for which job should be generated (example provided in repo)
+├── master.md              # Template file representing the factual professional data source (example provided in repo)
+├── job_listing.txt        # Contains listing for which job should be generated (example provided in repo)
 
 
