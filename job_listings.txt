@@ -1,0 +1,38 @@
+SAMPLE FILE -- DO NOT USE FOR ACTUAL SUBMISSIONS
+This is an example job description file for demonstration purposes.
+
+Software and Firmware Engineering Intern (16-Month Co-op)
+Company: Nexus Dynamics Systems
+Location: Ottawa, ON (Hybrid)
+
+About Us:
+Nexus Dynamics designs high-performance autonomous navigation systems and industrial IoT infrastructure for smart manufacturing environments. Our software and embedded hardware solutions power critical automation platforms globally.
+
+Job Summary:
+We are seeking a motivated Software and Firmware Engineering Intern to join our core R&D team for a 16-month co-op term. In this role, you will collaborate with cross-functional hardware and software teams to develop robust embedded C/C++ firmware, build automated testing infrastructure, and optimize data telemetry pipelines.
+
+Key Responsibilities:
+
+Design, develop, and test low-level embedded firmware in C and C++ for microcontrollers and IoT edge devices.
+
+Build automated regression testing suites and data analysis scripts using Python to validate hardware performance.
+
+Maintain continuous integration (CI) workflows and version control practices across multi-developer repositories.
+
+Troubleshoot hardware-software integration issues in a lab environment using oscilloscopes and protocol analyzers.
+
+Collaborate with systems architects to document design specifications and test procedures.
+
+Minimum Qualifications:
+
+Currently enrolled in a Bachelor's degree program in Computer Engineering, Electrical Engineering, Software Engineering, or related discipline.
+
+Strong programming proficiency in Python, C, or C++.
+
+Familiarity with embedded communication protocols (SPI, I2C, UART).
+
+Experience with Linux development environments, Git version control, and shell scripting.
+
+Strong analytical and debugging skills with hands-on lab instrument experience (oscilloscopes, multimeters).
+
+Excellent communication skills and a team-oriented mindset.
