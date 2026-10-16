@@ -1,0 +1,150 @@
+﻿% !TeX spellcheck = en
+\documentclass{template} % Use the custom resume.cls style
+
+\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.4in]{geometry} % Document margins
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=black]{hyperref}
+\usepackage{marvosym}
+\usepackage{graphicx}
+\usepackage{contour}
+\usepackage{ulem}
+
+\normalem
+
+\renewcommand{\ULdepth}{2.4pt}
+\contourlength{0.8pt}
+
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+\name{Zain Usmani}
+\address{\href{mailto:zain.usmani10@gmail.com}{zain.usmani10@gmail.com} \\
+         (226) 787-6794 \\
+         \href{https://www.linkedin.com/in/zain-usmani-/}{linkedin.com/in/zain-usmani-}
+    }
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+\vspace{0.1em}
+  \begin{rEducationSection}{University of Windsor}
+                           {2024 - Present}
+                           {BASc in Electrical and Computer Engineering (Minor in CS)}
+                           {GPA: 3.7/4.0}
+  \end{rEducationSection}
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rWorkSection} {Embedded Systems Developer}
+                      {June 2025 -- Present}
+                      {Formula Electric - Lancer Motorsport}
+                      {}
+  {
+    \item Analyzed signal integrity and debugged physical hardware buses using oscilloscopes and logic analyzers
+    \item Designed a high-performance dashboard on RPi OS Linux, bridging C++ and Linux backend services and vehicle parameters with a QT graphical interface in real-time
+    \item Built automated Python scripts to validate embedded system telemetry and data transmission integrity
+  } 
+  \end{rWorkSection}
+  
+  \begin{rWorkSection}{FPGA Vision Intern}
+                      {Apr 2026 -- Aug 2026}
+                      {O-Hive}
+                      {}
+  {
+    \item Engineered a real-time computer vision pipeline in C++ and deployed it to an AMD Kria KV260 embedded Linux system using a custom CMake build architecture
+    \item Quantized FastDepth weights to 8 bit integer precision using Brevitas and QONNX
+    \item Containerized firmware workspace via Docker to manage dependencies and ensure cross-compilation
+    \item Managed Linux V4L2 drivers and Xilinx firmware to route raw video directly to hardware accelerators
+    \item Designed a C++ memory fork to split and route incoming NV12 video buffers to FPGA accelerator
+    \item Corrected metric distortion by designing a algorithm using physical focal lengths to fix 4.6x error margin
+
+}
+  \end{rWorkSection}
+
+  \begin{rWorkSection}{ML and Data Intern}
+                      {Jan 2025 -- Sep 2025}
+                      {MicroNano Mechatronics Lab}
+                      {}
+  {
+    \item Programmed an ESP32 Bluetooth Low Energy pipeline in C++ to stream live IMU data at 50 Hz
+    \item Executed analysis on 16000 sensor samples using Pandas and NumPy to extract feature vectors
+    \item Trained XGBoost classification models to distinguish human gait patterns achieving a 78.9 F1 score
+    \item Co-authoring research paper detailing the machine learning performance for biomechanical classification
+  } \end{rWorkSection}
+
+\begin{rWorkSection}{Student Campus Ambassador}
+                      {Dec 2024 -- June 2026}
+                      {UWindsor Recruitment}
+                      {}
+{
+  \item Guided weekly facility tours for prospective engineering students to showcase technical laboratories
+  \item Represented the engineering faculty at recruitment events such as Open House and Grade 12 Day
+  
+} \end{rWorkSection}
+\vspace{0.1em}
+
+\end{rSection}
+
+ 
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+    % Title is outside the environment to avoid the bullet
+
+    \textbf{RouteScout Rover (McHacks 13) } $|$ \textit{Embedded C++, RPi 5, ESP32, 3D CAD} \hfill Jan 2026
+            \vspace{0.2em}
+    \begin{rProjectSection}
+        \item Developed a real-time odometry pipeline on ESP32, which relays data back to RPi computer
+        \item Captured high frequency data from motor encoders and IMU registers via hardware interrupts with I2C
+        \item Implemented a Madgwick filter and closed-loop PID control to generate precise PWM motor actuation
+    \end{rProjectSection}
+
+    \vspace{0.3em} 
+    \textbf{VGA Timing Controller and Frame Buffer } $|$ \textit{Verilog, Intel Quartus, MAX 10 FPGA} \hfill {Apr 2026}
+        \vspace{0.2em}
+    \begin{rProjectSection}
+        \item Designed a hardware VGA controller in Verilog to drive a 640x480 pixel display on a MAX 10 FPGA
+        \item Designed dual-port SRAM buffer to decouple video timing requirements from pixel generation logic
+        \item Managed memory read timing constraints and synthesized RTL design to achieve target clock frequencies
+    \end{rProjectSection}
+    
+\end{rSection}
+\vspace{0.4em}
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY / SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+\vspace{0.1em}
+  \begin{rSummarySection}
+{
+\item \textbf{Languages and Tools:} C++, C, Python, Linux (Ubuntu on SoM), Shell Scripting, CMake/Ninja, Git \vspace{0.2em}
+    \item \textbf{Hardware:} Oscilloscope, Waveform Generator, Logic Analyzer, Multimeters, SystemVerilog, Quartus\vspace{0.2em}
+    \item \textbf{Embedded Systems:} AMD Kria KV260, STM32, ESP32, Raspberry Pi, I2C, SPI, USART, Cube IDE\vspace{0.2em}
+    \item \textbf{Concepts:} Microarchitecture, Signal Integrity, I2C and SPI Protocols, DMA, PID Control, Sensor Fusion 
+
+  }
+  \end{rSummarySection}
+\end{rSection}
+\vspace{0.3em}
+
+
+\end{document}
